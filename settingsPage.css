@@ -1,0 +1,54 @@
+#newParameter {
+    display: none;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    padding: 10px;
+    border-top: 4px outset black;
+}
+
+.button {
+    width: 220px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.deleteButton {
+    width: 100px;
+    height: 25px;
+    margin-top: 10px;
+    margin-left: 40px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.parameter {
+    margin-bottom: 12px;
+    margin-left: 40px;
+    padding: 10px;
+    border-top: 2px outset black;
+    background: #98FB98;
+}
+
+.parameterID {
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+
+.parameterName {
+    margin-bottom: 12px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.parameterDescription {
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+
+.parameterSettings {
+    margin-bottom: 12px;
+    font-size: 16px;
+}
