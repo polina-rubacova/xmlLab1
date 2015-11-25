@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <link rel="stylesheet" type="text/css" href="settingsPage.css" />
+  </head>
+  <body>
+      <a href="" class="hidden" id="linkToOutputXML" hidden="hidden"></a>
+      <input class="button" type=button onclick='showParameterSettings()' value="Добавить параметр"/>
+      <script src='settingsPage.js' type='text/javascript'></script>
+      <div id="addParameter">
+          <label class="parameterSettings">Введите ID: </label>
+          <input class="parameterSettings" id="parameterID" type="text" /> <br/>
+          <label class="parameterSettings">Введите название: </label>
+          <input class="parameterSettings" id="parameterName" type="text" /> <br/>
+          <label class="parameterSettings">Введите описание: </label>
+          <input class="parameterSettings" id="parameterDescription" type="text" /> <br/>
+          <label class="parameterSettings">Выберите тип данных: </label>
+          <select class="parameterSettings" id="parameterType" onchange="setInputType()">
+              <option selected>Текст</option>
+              <option>Целое число</option>
+              <option>Логический</option>
+          </select> <br/>
+          <label class="parameterSettings">Введите значение: </label>
+          <input class="parameterSettings" id="parameterValue" type="text"/> <br/>
+          <input class="button" type=button onclick='cancelNewParameter()' value="Отменить"/>
+          <input class="button" type=button onclick='showNewParameter()' value="Сохранить параметр"/>
+      </div>
+      <script type='text/javascript'>document.getElementById("addParameter").style.display = "none";</script>
+      <footer>
+          <input class="button" type=button onclick='saveParameters()' value="Сохранить" />
+      </footer>
+  </body>
+</html>
